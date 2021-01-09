@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "kanban"
+  "defaultProject": "kanban",
+  "cli": {
+    "analytics": false
+  }
 }
