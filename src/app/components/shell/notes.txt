@@ -1,0 +1,1 @@
+1.  One great thing about angular material is that we dont need to style responsiveness with css. Angular cdk provides various observers for the same.
