@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "kanban-da93c": {
+      "hosting": {
+        "kanban": [
+          "kanban-da93c"
+        ]
+      }
+    }
+  }
+}
