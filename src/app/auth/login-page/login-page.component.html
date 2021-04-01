@@ -6,6 +6,8 @@
                 login
             </span>
         </button>
+        <h5>OR</h5>
+        <app-email-login></app-email-login>
     </div>
     <div *ngIf="fireAuth.authState | async as user" class="signin-section">
         <h3>Welcome {{user.email}}</h3>
