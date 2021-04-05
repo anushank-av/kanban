@@ -1,0 +1,20 @@
+<main>
+    <div *ngIf="!(fireAuth.authState | async)" class="signin-section">
+        <h1>Sign In</h1>
+        <button mat-raised-button appGoogleSignin>
+            <span class="material-icons">
+                login
+            </span>
+        </button>
+        <h5>OR</h5>
+        <app-email-login></app-email-login>
+    </div>
+    <div *ngIf="fireAuth.authState | async as user" class="signin-section">
+        <h3>Welcome {{user.email}}</h3>
+        <button mat-stroked-button (click)="fireAuth.signOut()" > 
+            <span class="material-icons">
+                logout
+            </span>
+        </button>
+    </div>
+</main>
